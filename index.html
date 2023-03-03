@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Chat app CSS illustration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <main class="site-main">
+    <div class="container">
+      <div class="chatapp">
+        <div class="chatapp-header">
+          <button type="button" class="btn btn-back"><img src="./images/icon-back.svg" alt="Back"></button>
+          <div class="chatapp-recipient">
+            <div class="recipient-avatar">
+              <img src="./images/avatar.jpg" class="avatar" alt="Samuel Green">
+            </div>
+            <div class="recipient-info">
+              <h2 class="recipient-name">Samuel Green</h2>
+              <h3 class="recipient-status">Available to Walk</h3>
+            </div>
+          </div>
+          <button type="button" class="btn btn-menu"><img src="./images/icon-more.svg" alt="More"></button>
+        </div>
+        <div class="chatapp-body">
+          <div class="chatapp-message received">That sounds great. I’d be happy with that.</div>
+          <div class="chatapp-message received">Could you send over some pictures of your dog, please?</div>
+          <div class="chatapp-message sent chatapp-images">
+            <div class="message-gallery">
+              <img class="gallery-item" src="./images/dog-image-1.jpg" alt="Dog" />
+              <img class="gallery-item" src="./images/dog-image-2.jpg" alt="Dog" />
+              <img class="gallery-item" src="./images/dog-image-3.jpg" alt="Dog" />
+            </div>
+          </div>
+          <div class="chatapp-message sent">Here are a few pictures. She’s a happy girl!</div>
+          <div class="chatapp-message sent">Can you make it?</div>
+          <div class="chatapp-message received">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+          <label for="offer-29" class="chatapp-offer received">
+            <input id="offer-29" type="radio" name="offer" class="offer-radio"/>
+            <div class="offer-item"></div>
+            <span class="offer-name">30 minute walk</span>
+            <span class="offer-price">$29</span>
+          </label>
+          <label for="offer-49" class="chatapp-offer received">
+            <input id="offer-49" type="radio" name="offer" class="offer-radio"/>
+            <div class="offer-item"></div>
+            <span class="offer-name">1 hour walk</span>
+            <span class="offer-price">$49</span>
+          </label> 
+        </div>
+        <div class="chatapp-footer">
+          <form class="form" action="#" method="post">
+            <input type="text" class="textarea" placeholder="Type a message…" />
+            <button type="submit" class="btn btn-send"><img src="./images/icon-send.svg" alt="Back"></button>
+          </form>
+        </div>
+      </div>
+      <div class="site-content">
+        <h1 class="site-title">Simple booking</h1>
+        <p class="site-desc">Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
